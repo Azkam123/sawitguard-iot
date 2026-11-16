@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "60824220243",
+    "project_id": "sawitguard-iot-prod",
+    "storage_bucket": "sawitguard-iot-prod.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60824220243:android:3bcad4b045a6dcf5820ca6",
+        "android_client_info": {
+          "package_name": "id.sawitguard.sawitguard_iot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuuiNcnRFyi547nUhnOXfx51-b7GaQiik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

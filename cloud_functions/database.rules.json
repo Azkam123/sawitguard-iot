@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "devices": {
+      ".read": "auth !== null",
+      ".write": "auth !== null"
+    },
+    "history_logs": {
+      ".read": "auth !== null",
+      ".write": "auth !== null",
+      ".indexOn": ["timestamp", "device_id"]
+    },
+    "otp_verifications": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}

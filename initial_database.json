@@ -1,0 +1,18 @@
+{
+  "devices": {
+    "node_selatan_01": {
+      "nama_lokasi": "Blok Selatan Parit Gajah",
+      "status": "AMAN",
+      "baterai": 88,
+      "sinyal_rssi": -98,
+      "last_updated": 1726733245
+    },
+    "node_utara_02": {
+      "nama_lokasi": "Blok Utara Jalan Traktor",
+      "status": "AMAN",
+      "baterai": 94,
+      "sinyal_rssi": -104,
+      "last_updated": 1726733245
+    }
+  }
+}
