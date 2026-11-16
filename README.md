@@ -1,4 +1,4 @@
-# SawitGuard IoT 🌿🛡️
+SawitGuard IoT 
 
 > **Sistem Deteksi Intrusi Perkebunan Kelapa Sawit Berbasis IoT**  
 > Menggunakan Fusi Sensor Boolean, Komunikasi LoRa, dan Ekosistem Flutter-Firebase
@@ -9,10 +9,10 @@
 
 SawitGuard IoT adalah aplikasi Android yang berfungsi sebagai **antarmuka pengguna akhir** untuk sistem keamanan perkebunan kelapa sawit berbasis IoT. Aplikasi ini dirancang untuk:
 
-- 📡 **Memantau** status sensor di lapangan secara *real-time*
-- 🚨 **Membunyikan alarm** secara instan ketika intrusi terdeteksi
-- 📱 **Membangunkan HP** petani di malam hari meski layar terkunci
-- 📋 **Mencatat riwayat** kejadian sebagai bukti audit permanen
+- **Memantau** status sensor di lapangan secara *real-time*
+- **Membunyikan alarm** secara instan ketika intrusi terdeteksi
+- **Membangunkan HP** petani di malam hari meski layar terkunci
+- **Mencatat riwayat** kejadian sebagai bukti audit permanen
 
 ---
 
@@ -96,7 +96,7 @@ flutter run
 
 ---
 
-## 📥 Download Aplikasi Android (APK Siap Pakai)
+## Download Aplikasi Android (APK Siap Pakai)
 
 File APK installer terbaru dapat diunduh pada tab **[Releases](../../releases)** di repository GitHub ini atau hubungi pengembang untuk pengujian langsung pada perangkat fisik.
 
@@ -149,4 +149,3 @@ firebase deploy --only functions
 
 ---
 
-*Dikembangkan untuk Skripsi S1 Teknik Informatika — Sistem Deteksi Intrusi Perkebunan Kelapa Sawit Berbasis IoT*
