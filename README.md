@@ -65,22 +65,22 @@ lib/
 
 ## Langkah Setup
 
-### 1. Prasyarat
+1. Prasyarat
 - Flutter SDK ≥ 3.32
 - Android Studio / VS Code
 - Firebase Account
 - Node.js ≥ 20 (untuk Cloud Functions)
 
-### 2. Setup Firebase
+2. Setup Firebase
 Ikuti panduan lengkap di **[SETUP_FIREBASE.md](SETUP_FIREBASE.md)**
 
-### 3. Generate Firebase Options
+3. Generate Firebase Options
 ```bash
 dart pub global activate flutterfire_cli
 flutterfire configure --project=sawitguard-iot-prod
 ```
 
-### 4. Konfigurasi Email OTP (SMTP Gmail)
+4. Konfigurasi Email OTP (SMTP Gmail)
 Untuk pengujian verifikasi akun baru via OTP, salin template konfigurasi:
 ```bash
 # Salin template ke file konfigurasi lokal
@@ -88,7 +88,7 @@ copy lib\core\config\email_config.example.dart lib\core\config\email_config.dart
 ```
 > *Catatan: Untuk menjaga keamanan informasi pada repository publik, kredensial asli disembunyikan menggunakan `.gitignore`.*
 
-### 5. Install Dependensi & Jalankan
+5. Install Dependensi & Jalankan
 ```bash
 flutter pub get
 flutter run
@@ -96,56 +96,9 @@ flutter run
 
 ---
 
-## Download Aplikasi Android (APK Siap Pakai)
+Download Aplikasi Android APK Siap Pakai
 
 File APK installer terbaru dapat diunduh pada tab **[Releases](../../releases)** di repository GitHub ini atau hubungi pengembang untuk pengujian langsung pada perangkat fisik.
 
----
 
-## Testing Tanpa Hardware
-
-Gunakan **simulator gateway** untuk menguji seluruh alur tanpa perangkat keras fisik:
-
-```powershell
-# Edit dulu FIREBASE_PROJECT_ID dan DATABASE_SECRET di dalam file
-powershell -ExecutionPolicy Bypass -File gateway_simulator.ps1
-```
-
----
-
-## Deploy Cloud Functions
-
-```bash
-cd cloud_functions
-npm install
-npm run build
-firebase deploy --only functions
-```
-
----
-
-## Dokumen Pengujian
-
-| Dokumen | Keterangan |
-|:--------|:-----------|
-| [MATRIKS_PENGUJIAN_BLACKBOX.md](MATRIKS_PENGUJIAN_BLACKBOX.md) | 37 test case untuk sidang skripsi |
-| [SETUP_FIREBASE.md](SETUP_FIREBASE.md) | Panduan konfigurasi Firebase lengkap |
-| [gateway_simulator.ps1](gateway_simulator.ps1) | Simulator payload gateway LoRa |
-
----
-
-## Dependensi Utama
-
-| Package | Versi | Fungsi |
-|:--------|:------|:-------|
-| `firebase_database` | ^11.3.5 | Streaming data realtime |
-| `firebase_messaging` | ^15.2.5 | Push notifikasi FCM |
-| `firebase_auth` | ^5.5.2 | Autentikasi pengguna |
-| `provider` | ^6.1.5 | State management |
-| `audioplayers` | ^6.4.0 | Sirine alarm audio |
-| `flutter_animate` | ^4.5.2 | Animasi micro-interaction |
-| `google_fonts` | ^6.2.1 | Tipografi Plus Jakarta Sans |
-| `flutter_local_notifications` | ^18.0.1 | Notifikasi lokal + FCM channel |
-
----
 
